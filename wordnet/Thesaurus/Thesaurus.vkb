@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rules>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>3FB8E139227842F0</Id>
+          <Text>Thes* [word]</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>65271AD939042EB8</Id>
+          <Text>A similar or related word would be ( [word]_1 ).</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>54C77189ECB6FCA9</Id>
+      <Name>Thesaurus</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>ED49FD354EF69585</Id>
+          <Text>Gen* [word]</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>3813BDCD64415DA7</Id>
+          <Text>A generic for this word is ( [word]_1G ).</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>E9008E12F988BBC</Id>
+      <Name>Generic</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>8747AF76CA3ADCD4</Id>
+          <Text>Anton* [word] Idx [index]</Text>
+          <Condition />
+        </Input>
+        <Input>
+          <Id>C8BF26C8C05F2065</Id>
+          <Text>Anton* [word] Ind* [index]</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>3BE4CB725ED4D722</Id>
+          <Text>An Antonym for this word is ( [word]_[index]A ).</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>7D509EF35ACAE6B3</Id>
+      <Name>Antonym + Word_Idx</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>AB1C247FF758DDB2</Id>
+          <Text>Anton* [word]</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>42A91ACA9F2D12BE</Id>
+          <Text>An antonym for this word is ( [word]_1A )</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>F8C8279D6BEDD5DC</Id>
+      <Name>Antonym</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>27256F781EADBB2D</Id>
+          <Text>Gen* [word] Idx [index]</Text>
+          <Condition />
+        </Input>
+        <Input>
+          <Id>F61423EE58B214A4</Id>
+          <Text>Gen* [word] Ind* [index]</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>1798B70CCCE3D9E5</Id>
+          <Text>A generic for this word is ( [word]_[index]G ).</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>F55345F2E09527FB</Id>
+      <Name>Generic + Word_Idx</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>35DE00A39D9EF398</Id>
+          <Text>Thes* [word] Idx [index]</Text>
+          <Condition />
+        </Input>
+        <Input>
+          <Id>A0A6A55027BAF093</Id>
+          <Text>Thes* [word] Ind* [index]</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>F34D515339BC4E2E</Id>
+          <Text>A similar or related word would be ( [word]_[index] ).</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>2216B9951B44DB16</Id>
+      <Name>Thesaurus + Word_Idx</Name>
+    </Rule>
+  </Rules>
+  <ResourceFiles>
+    <ResourceFile>
+      <Filename>Thes_Antonyms_a-z.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_Generic_a-b.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_Generic_c-e.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_Generic_f-j.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_Generic_k-o.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_Generic_p-r.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_Generic_s-t.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_Generic_u-z.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_SynSimRel_a-b.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_SynSimRel_c-e.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_SynSimRel_f-j.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_SynSimRel_k-o.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_SynSimRel_p-r.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_SynSimRel_s-t.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>Thes_SynSimRel_u-z.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+  </ResourceFiles>
+  <Info>
+    <Author>Mapestone (Dan Mapes)</Author>
+    <Copyright>Public Domain</Copyright>
+    <License>Synonym files derived from the WordNet database. License info. in WordNet_license.txt</License>
+    <AuthorWebsite />
+    <CreationDate>2011-05-17T22:42:51.171875-04:00</CreationDate>
+    <LastUpdateDate>2011-05-22T21:37:39.0625-04:00</LastUpdateDate>
+    <Rating>
+      <Rating>General</Rating>
+      <Language>true</Language>
+      <Sexual>false</Sexual>
+      <Violence>false</Violence>
+      <Other>false</Other>
+      <Description>Enter an obscenity and the verbot replies with a related term.</Description>
+    </Rating>
+    <Category>Reference</Category>
+    <Language>English</Language>
+    <Comment>The WordNet Thesaurus.  Enter a word and the Verbot will return a similar word, antonym, or a generic term for the word, if found in the thesaurus.</Comment>
+  </Info>
+  <Version>1.0</Version>
+  <Build>15</Build>
+</KnowledgeBase>

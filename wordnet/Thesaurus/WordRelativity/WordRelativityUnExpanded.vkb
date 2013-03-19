@@ -1,0 +1,2870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rules>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>27CC64F4791FB2DE</Id>
+          <Text>_Level_1_Try_1</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>792BAA9E160E367F</Id>
+          <Text>Level 1 Try 1 Word [_Level_1_Word_Count]
+
+&lt;printtext #FirstTryL1 &gt;
+A #POSL1 of #NumCharsL1 characters.
+A related word or phrase:  (#WordL1).
+
+&lt;printtext (Type "quit" to end game.  Type "score" for score.)&gt;
+
+&lt;mem.set _Current_Level 1&gt;
+&lt;mem.set _Current_Word #WordL1&gt;
+&lt;?csharp vars["_Level_1_Word_Count"] = MyMath.Add(vars["_Level_1_Word_Count"] , "1"); ?&gt;</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>4032A453D2C6D634</Id>
+              <Text>*</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>5E90EF1EDFF363EE</Id>
+              <Text>Let's give it another try.
+
+&lt;send _Try_2&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children>
+            <Rule>
+              <Inputs>
+                <Input>
+                  <Id>8EF94D438348806</Id>
+                  <Text>_Try_2</Text>
+                  <Condition />
+                </Input>
+              </Inputs>
+              <Outputs>
+                <Output>
+                  <Id>436EBA14DFE0ED55</Id>
+                  <Text>Try 2
+
+&lt;printtext #SecondTryL1
+A #POSL1 of #NumCharsL1 characters.&gt;
+A related word or phrase:  (#WordL1).
+&lt;printtext 
+(Type "exit" to end game.  Type "stats" for game statistics.)&gt;</Text>
+                  <Condition />
+                  <Cmd />
+                </Output>
+              </Outputs>
+              <Children>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>10530DCB24788BCC</Id>
+                      <Text>*</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>37C98A487DFC0AF5</Id>
+                      <Text>Foiled again!
+
+&lt;send _Try_3&gt;</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children>
+                    <Rule>
+                      <Inputs>
+                        <Input>
+                          <Id>579F447A2FF937DA</Id>
+                          <Text>_Try_3</Text>
+                          <Condition />
+                        </Input>
+                      </Inputs>
+                      <Outputs>
+                        <Output>
+                          <Id>CB27295AB7382E1F</Id>
+                          <Text>Try 3
+
+&lt;printtext #ThirdTryL1
+A #POSL1 of #NumCharsL1 characters.&gt;
+A related word or phrase:  (#WordL1).
+&lt;printtext 
+(Type "end" to end game.  For statistics type "stats".)&gt;</Text>
+                          <Condition />
+                          <Cmd />
+                        </Output>
+                      </Outputs>
+                      <Children>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>4F297FEBE321862E</Id>
+                              <Text>*</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>80DCCC0E349405C7</Id>
+                              <Text>Try again.
+
+&lt;send _Try_4&gt;</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children>
+                            <Rule>
+                              <Inputs>
+                                <Input>
+                                  <Id>A98255E9CEA9A4CD</Id>
+                                  <Text>_Try_4</Text>
+                                  <Condition />
+                                </Input>
+                              </Inputs>
+                              <Outputs>
+                                <Output>
+                                  <Id>1BA91E4F440C15</Id>
+                                  <Text>Try 4
+
+&lt;printtext #FourthTryL1
+A #POSL1 of #NumCharsL1 characters. &gt;
+A related word or phrase:  (#WordL1).
+&lt;printtext 
+(Type "stop" to end game.  Type "score" for statistics.)&gt;</Text>
+                                  <Condition />
+                                  <Cmd />
+                                </Output>
+                              </Outputs>
+                              <Children>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>19277DC4B3C48690</Id>
+                                      <Text>*</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>71F2A062A7EFD312</Id>
+                                      <Text>Just one more chance...
+
+&lt;send _Try_5&gt;</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children>
+                                    <Rule>
+                                      <Inputs>
+                                        <Input>
+                                          <Id>8D89E810602283B1</Id>
+                                          <Text>_Try_5</Text>
+                                          <Condition />
+                                        </Input>
+                                      </Inputs>
+                                      <Outputs>
+                                        <Output>
+                                          <Id>E0B61DE248D5F26E</Id>
+                                          <Text>Try 5
+
+&lt;printtext #FifthTryL1
+A #POSL1 of #NumCharsL1 characters. &gt;
+Related word or phrase:  (#WordL1).
+&lt;printtext 
+(Type "end" to end game.  Type "score" for statistics.)&gt;</Text>
+                                          <Condition />
+                                          <Cmd />
+                                        </Output>
+                                      </Outputs>
+                                      <Children>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>8456D52A1A0CC77C</Id>
+                                              <Text>*</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>AC5A50DD4BCE6B1F</Id>
+                                              <Text>Five and out!  
+The word in question is: #WordL1.
+Let's try again.
+
+&lt;send _Level_1_Try_1&gt;</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>EB5855F48F2EF21F</Id>
+                                          <Name>*</Name>
+                                        </Rule>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>BED0303460032199</Id>
+                                              <Text>#WordL1</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>958B72B67E8F450</Id>
+                                              <Text>#WordL1 is correct.
+Try 5 Winner! ... Just in time. 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "2"); ?&gt;
+&lt;send _Level_1_Try_1&gt;</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>9B6CE501C307445D</Id>
+                                              <Text>#WordL1 is correct.
+Try 5 Winner! 
+Lets Kick it Up to Level 2 ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "2"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                                              <Condition>Int16.Parse(vars["_Level_1_Points"].Trim()) &gt;= 40</Condition>
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>51AF79F98366E5C1</Id>
+                                          <Name>Winner</Name>
+                                        </Rule>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>4AC2A6509EAC27C8</Id>
+                                              <Text>quit</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>29F08B3984524BD4</Id>
+                                              <Text>end</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>397A29DC448158C5</Id>
+                                              <Text>stop</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>91171F6740A6ABA</Id>
+                                              <Text>exit</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>F1E563432B91BA1D</Id>
+                                              <Text>OK, game over.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>D15C8EF450DBB63E</Id>
+                                              <Text>O.K. No more game.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>7B9FE3BE911A9FF3</Id>
+                                              <Text>End of game.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>E3F1647CD464530E</Id>
+                                              <Text>Calling it quits?  Fine.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>869CF09161499122</Id>
+                                              <Text>Well then, the game ends here.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>55EDB511D24486BD</Id>
+                                          <Name>quit</Name>
+                                        </Rule>
+                                      </Children>
+                                      <VirtualParents />
+                                      <Id>6B83DD09F791BA61</Id>
+                                      <Name>Try 5</Name>
+                                    </Rule>
+                                  </Children>
+                                  <VirtualParents />
+                                  <Id>4524482AF2EA8F7E</Id>
+                                  <Name>*</Name>
+                                </Rule>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>D361C95AD18F829B</Id>
+                                      <Text>#WordL1</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>23C464A7D3A4C1AB</Id>
+                                      <Text>#WordL1 is correct.
+Try 4 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "4"); ?&gt;
+&lt;send _Level_1_Try_1&gt;</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>59FB1AA2789C6345</Id>
+                                      <Text>#WordL1 is correct.
+Try 4 Winner! 
+Lets Kick it Up to Level 2 ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "4"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                                      <Condition>Int16.Parse(vars["_Level_1_Points"].Trim()) &gt;= 40</Condition>
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children />
+                                  <VirtualParents />
+                                  <Id>8F2ED4274A4F53A8</Id>
+                                  <Name>Winner</Name>
+                                </Rule>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>88C2DCD7D3105CCD</Id>
+                                      <Text>quit</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>60C78F27F8C04F68</Id>
+                                      <Text>end</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>F4CBE2F130E7A4EB</Id>
+                                      <Text>stop</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>D75C540A4ED1EB57</Id>
+                                      <Text>exit</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>45AC4FBE7560FFA</Id>
+                                      <Text>OK, game over.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>C15BFB34B3B3F811</Id>
+                                      <Text>O.K. No more game.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>BFE7BCA24ED3EC42</Id>
+                                      <Text>End of game.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>2A449A28FFAFA5DF</Id>
+                                      <Text>Calling it quits?  Fine.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>69A6852245A69B0D</Id>
+                                      <Text>Well then, the game ends here.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children />
+                                  <VirtualParents />
+                                  <Id>DF7362835E34D8F8</Id>
+                                  <Name>quit</Name>
+                                </Rule>
+                              </Children>
+                              <VirtualParents />
+                              <Id>D8DA2B0DBB8139C2</Id>
+                              <Name>Try 4</Name>
+                            </Rule>
+                          </Children>
+                          <VirtualParents />
+                          <Id>99596E7B9B54F87C</Id>
+                          <Name>*</Name>
+                        </Rule>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>F13ED4D72C136E5E</Id>
+                              <Text>#WordL1</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>34FA3471212F4109</Id>
+                              <Text>#WordL1 is correct.
+Try 3 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "6"); ?&gt;
+&lt;send _Level_1_Try_1&gt;</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>427D39FDC39E2B3E</Id>
+                              <Text>#WordL1 is correct.
+Try 3 Winner! 
+Lets Kick it Up to Level 2 ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "6"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                              <Condition>Int16.Parse(vars["_Level_1_Points"].Trim()) &gt;= 40</Condition>
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children />
+                          <VirtualParents />
+                          <Id>B6D455F971B9D094</Id>
+                          <Name>Winner</Name>
+                        </Rule>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>466BA4635A19118</Id>
+                              <Text>quit</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>81F171A25C318AFB</Id>
+                              <Text>end</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>19533F3AF412E1FC</Id>
+                              <Text>stop</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>3D99FDFB444976</Id>
+                              <Text>exit</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>43E90CFAF57DD4C7</Id>
+                              <Text>OK, game over.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>B3AAC6FC8A29E9E9</Id>
+                              <Text>O.K. No more game.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>9B2843B69C0C2B</Id>
+                              <Text>End of game.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>98E72E437BC8A617</Id>
+                              <Text>Calling it quits?  Fine.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>DE1FC96FC7AA8D5A</Id>
+                              <Text>Well then, the game ends here.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children />
+                          <VirtualParents />
+                          <Id>2067434C1E98F4C6</Id>
+                          <Name>quit</Name>
+                        </Rule>
+                      </Children>
+                      <VirtualParents />
+                      <Id>B744D409F6CAF73A</Id>
+                      <Name>Try 3</Name>
+                    </Rule>
+                  </Children>
+                  <VirtualParents />
+                  <Id>4E2947DD33DED31</Id>
+                  <Name>*</Name>
+                </Rule>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>CD79F1F14CF1B2FF</Id>
+                      <Text>#WordL1</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>FE170A18ACF500FB</Id>
+                      <Text>#WordL1 is correct.
+Try 2 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "8"); ?&gt;
+&lt;send _Level_1_Try_1&gt;</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>19C63745FA9F48AC</Id>
+                      <Text>#WordL1 is correct.
+Try 2 Winner! 
+Lets Kick it Up to Level 2 ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "8"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                      <Condition>Int16.Parse(vars["_Level_1_Points"].Trim()) &gt;= 40</Condition>
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children />
+                  <VirtualParents />
+                  <Id>3FFE8339ECBCAE5B</Id>
+                  <Name>Winner</Name>
+                </Rule>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>770B262D241EC573</Id>
+                      <Text>quit</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>EFAD93A3B6DFC54E</Id>
+                      <Text>end</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>84C84A6AA6805E83</Id>
+                      <Text>stop</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>7C77C8D7B0571DF0</Id>
+                      <Text>exit</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>A888C8B423733990</Id>
+                      <Text>OK, game over.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>BA4FF1A3F8B87B34</Id>
+                      <Text>O.K. No more game.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>F8117F82F23481AC</Id>
+                      <Text>End of game.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>D875190E91D47FDE</Id>
+                      <Text>Calling it quits?  Fine.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>5DBA5D351CCD3578</Id>
+                      <Text>Well then, the game ends here.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children />
+                  <VirtualParents />
+                  <Id>312D4E281F5639B8</Id>
+                  <Name>quit</Name>
+                </Rule>
+              </Children>
+              <VirtualParents />
+              <Id>C28D80031CFFF8F8</Id>
+              <Name>Try 2</Name>
+            </Rule>
+          </Children>
+          <VirtualParents />
+          <Id>C85CFEDEB6F77982</Id>
+          <Name>*</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>785A23588DF0FB33</Id>
+              <Text>#WordL1</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>3F912DC45D03A1D9</Id>
+              <Text>#WordL1 is correct.
+Try 1 Winner! 
+Let's try another word...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "10"); ?&gt;
+&lt;send _Level_1_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>C57DD57B3E8D3080</Id>
+              <Text>#WordL1 is correct.
+Try 1 Winner! 
+Lets Kick it Up to Level 2 ...
+
+&lt;?csharp vars["_Level_1_Points"] = MyMath.Add(vars["_Level_1_Points"] , "10"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+              <Condition>Int16.Parse(vars["_Level_1_Points"].Trim()) &gt;= 40</Condition>
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>D02B7F3D4100653D</Id>
+          <Name>Winner</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>B542FFD765F6ED02</Id>
+              <Text>quit</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>9B5C5B051B205CC1</Id>
+              <Text>end</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>115050507CA03F1</Id>
+              <Text>stop</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>EE6D22C692ECD41C</Id>
+              <Text>exit</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>3FB8B7662DC9D5DF</Id>
+              <Text>Game over.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>7EC13CEFC38070D</Id>
+              <Text>O.K. No more game.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>B4C0D04093A6328E</Id>
+              <Text>End of game.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>B4937B847B6C0685</Id>
+              <Text>Calling it quits?  Fine.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>14F0D24FF8FDE9F8</Id>
+              <Text>Well then, the game ends here.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>4EBE990D16CB7078</Id>
+          <Name>quit</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>3362440761BD0BBD</Id>
+              <Text>Score</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>E3F100FDA550DAA9</Id>
+              <Text>Stat*</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>BAFDA2FEB2F03B1A</Id>
+              <Text>&lt;printtext *** Statistics ***&gt;
+&lt;printtext Level 1&gt;
+Number of Words: [_Level_1_Word_Count]
+Total Points: [_Level_1_Points]
+&lt;printtext ...&gt;
+&lt;send _Level_1_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>5400658E7CCA9E75</Id>
+          <Name>Score</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>EE74B765565FD6B</Id>
+              <Text>Level 2</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>C18B0C81CC172223</Id>
+              <Text>Jumping to Level 2 ...
+&lt;send _Level_2_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>9979BEBBC81C9478</Id>
+          <Name>Level 2</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>299BAAAEB5959813</Id>
+              <Text>Level 3</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>55E5A3BDC6BE155E</Id>
+              <Text>A Double Hop to Level 3 ...
+&lt;send _Level_3_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>604666ABBA66E866</Id>
+          <Name>Level 3</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>A6A7304C9D0E2E78</Id>
+              <Text>Level 1</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>FE816920214D7238</Id>
+              <Text>Skipping this word and trying another ...
+&lt;send _Level_1_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>8ED05ABC035CD66</Id>
+          <Name>Level 1</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>6CFBF38C167E555E</Id>
+              <Text>Level *</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>FC87C43240E2318</Id>
+              <Text>Enter "Level 1" , "Level 2" , or "Level 3"  to skip to another word and level.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>687B04BE54707B11</Id>
+          <Name>Level *</Name>
+        </Rule>
+      </Children>
+      <VirtualParents />
+      <Id>932A06703B9F8178</Id>
+      <Name>Level 1 - Try 1</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>50C253EF6216B1CF</Id>
+          <Text>_startup</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>6406A160F80E8D15</Id>
+          <Text>&lt;printtext *** W*rd Rel*tivity ***&gt;
+&lt;agent.speak word relativity&gt;
+&lt;printtext Type "help" for a brief explaination of the game.  
+Anything else will start the game.&gt;
+
+&lt;mem.set _Current_Level 0&gt;
+&lt;mem.set _Current_Try 0&gt;
+&lt;mem.set _Level_1_Word_Count 0&gt;
+&lt;mem.set _Level_1_Points 0&gt;
+&lt;mem.set _Level_2_Word_Count 0&gt;
+&lt;mem.set _Level_2_Points 0&gt;
+&lt;mem.set _Level_3_Word_Count 0&gt;
+&lt;mem.set _Level_3_Points 0&gt;</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>A4B5CE9D1D92C6E</Id>
+              <Text>Inst*</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>6A4F6EAEDB8066DC</Id>
+              <Text>Hel*</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>E4A760A6D258F64D</Id>
+              <Text>Intro*</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>A1D7E4DAC22A6D8F</Id>
+              <Text>Expl*</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>3E9AC6A0F39B0A27</Id>
+              <Text>Rules</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>C05D905C9D4B0976</Id>
+              <Text>&lt;printtext *** W**d Rel*t*vity **
+There are three levels of difficulty: Level 1, Level 2, Level 3.
+A mystery word is presented, along with hint(s).  Hints are similar or related words 
+or phrases.  You must guess the word in five tries.  Letters in the word 
+are revealed with each try.  Points are awarded for each correct guess: 
+10 points for the correct word on the first try, 8 for the second, and 6, 4, 2
+for guessing correcty on the third, fourth, and fifth try.
+A score above 40 points sends you to the next Level. 
+
+Additional commands available on the first try of any word:
+- "Score": game statistics.
+- "Level 1", "Level 2", "Level 3" : jump to a new word on the level entered.
+
+Entering "Quit" will quit the game at any time.  Scores are not saved between games.
+
+&gt;
+&lt;send _startup&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>5F959A7865FB5422</Id>
+          <Name>Instructions</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>F9DAFA698DE42D57</Id>
+              <Text>*</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>7F7CABCF77745A6D</Id>
+              <Text>OK, let's get started then.
+ 
+&lt;send _Level_1_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>10D1D0F32E206BF0</Id>
+          <Name>Start Game</Name>
+        </Rule>
+      </Children>
+      <VirtualParents />
+      <Id>79797203B055E9D</Id>
+      <Name>_startup</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>45B20792A7CF18C5</Id>
+          <Text>quit</Text>
+          <Condition />
+        </Input>
+        <Input>
+          <Id>E8D8A9C659C1CEE</Id>
+          <Text>end</Text>
+          <Condition />
+        </Input>
+        <Input>
+          <Id>74B4C87BD64C254A</Id>
+          <Text>stop</Text>
+          <Condition />
+        </Input>
+        <Input>
+          <Id>2933382AACB7F091</Id>
+          <Text>exit</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>E0B84B8C64FDFA50</Id>
+          <Text>OK, game over.</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+        <Output>
+          <Id>8E62AEE8649B7273</Id>
+          <Text>O.K. No more game.</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+        <Output>
+          <Id>E6A8D3C4AA4AFE12</Id>
+          <Text>End of game.</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+        <Output>
+          <Id>920306ACBE89F56F</Id>
+          <Text>Calling it quits?  Fine.</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+        <Output>
+          <Id>374AE0DDA7EF2D23</Id>
+          <Text>Well then, the game ends here.</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>23EF824C66F83CF7</Id>
+      <Name>quit</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>C6503E12C104AEE9</Id>
+          <Text>reset</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>DA8F8973D6C7DE41</Id>
+          <Text>Resetting Counters ...
+... ... ... ... ... ... ... .. ...
+&lt;mem.set _Current_Level 0&gt;
+&lt;mem.set _Current_Try 0&gt;
+&lt;mem.set _Level_1_Word_Count 0&gt;
+&lt;mem.set _Level_1_Points 0&gt;
+&lt;mem.set _Leve_2_Word_Count 0&gt;
+&lt;mem.set _Level_2_Points 0&gt;
+&lt;mem.set _Level_3_Word_Count 0&gt;
+&lt;mem.set _Level_3_Points 0&gt;
+&lt;send _Level_1_Try_1&gt;</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>CF9276DA57DF155C</Id>
+      <Name>Reset Counters</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>55B1BFF4720DAC8B</Id>
+          <Text>Score</Text>
+          <Condition />
+        </Input>
+        <Input>
+          <Id>7A89C26350B687A7</Id>
+          <Text>Stat*</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>A4AF65A2726085C0</Id>
+          <Text>&lt;printtext *** Statistics ***&gt;
+&lt;printtext Level 1&gt;
+Number of Words: [_Level_1_Word_Count]
+Total Points: [_Level_1_Points]
+&lt;send _Level_1_Try_1&gt;</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children />
+      <VirtualParents />
+      <Id>10D1B57F83231B14</Id>
+      <Name>Score</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>95979FAC6736DD94</Id>
+          <Text>_Level_2_Try_1</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>C2ABB22F76F12253</Id>
+          <Text>&lt;?csharp vars["_Level_2_Word_Count"] = MyMath.Add(vars["_Level_2_Word_Count"] , "1"); ?&gt;
+Level 2 Try 1 Word [_Level_2_Word_Count]
+
+&lt;printtext #FirstTryL2 &gt;
+A #POSL2 of #NumCharsL2 characters.
+A related word or phrase:  (#WordL2).
+&lt;printtext 
+(Type "quit" to end game.  Type "score" for score.)&gt;
+&lt;mem.set _Current_Level 2&gt;</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>598698D8BE97D7DB</Id>
+              <Text>*</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>44F19C629B0B56ED</Id>
+              <Text>Let's give it another try.
+
+&lt;send _Try_2&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children>
+            <Rule>
+              <Inputs>
+                <Input>
+                  <Id>2DF8C3C4D98A6DAE</Id>
+                  <Text>_Try_2</Text>
+                  <Condition />
+                </Input>
+              </Inputs>
+              <Outputs>
+                <Output>
+                  <Id>3B4CFB142C26DAC8</Id>
+                  <Text>Try 2
+
+&lt;printtext #SecondTryL2
+A #POSL2 of #NumCharsL2 characters.&gt;
+A related word or phrase:  (#WordL2).
+&lt;printtext 
+(Type "exit" to end game.  Type "stats" for game statistics.)&gt;</Text>
+                  <Condition />
+                  <Cmd />
+                </Output>
+              </Outputs>
+              <Children>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>F8B17DF7A1FD0A7</Id>
+                      <Text>*</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>AE389F8FDFDC04C</Id>
+                      <Text>Foiled again!
+
+&lt;send _Try_3&gt;</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children>
+                    <Rule>
+                      <Inputs>
+                        <Input>
+                          <Id>3D0208F450F543B</Id>
+                          <Text>_Try_3</Text>
+                          <Condition />
+                        </Input>
+                      </Inputs>
+                      <Outputs>
+                        <Output>
+                          <Id>BE433767837BE651</Id>
+                          <Text>Try 3
+
+&lt;printtext #ThirdTryL2
+A #POSL2 of #NumCharsL2 characters.&gt;
+A related word or phrase:  (#WordL2).
+&lt;printtext 
+(Type "end" to end game.  For statistics type "stats".)&gt;</Text>
+                          <Condition />
+                          <Cmd />
+                        </Output>
+                      </Outputs>
+                      <Children>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>D2C21F20CCE95488</Id>
+                              <Text>*</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>523756A873EB68BE</Id>
+                              <Text>Try again.
+
+&lt;send _Try_4&gt;</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children>
+                            <Rule>
+                              <Inputs>
+                                <Input>
+                                  <Id>B1F466209D9FAF28</Id>
+                                  <Text>_Try_4</Text>
+                                  <Condition />
+                                </Input>
+                              </Inputs>
+                              <Outputs>
+                                <Output>
+                                  <Id>CF5394398C7602FB</Id>
+                                  <Text>Try 4
+
+&lt;printtext #FourthTryL2
+A #POSL2 of #NumCharsL2 characters. &gt;
+A related word or phrase:  (#WordL2).
+&lt;printtext 
+(Type "stop" to end game.  Type "score" for statistics.)&gt;</Text>
+                                  <Condition />
+                                  <Cmd />
+                                </Output>
+                              </Outputs>
+                              <Children>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>C431FA810E6C43</Id>
+                                      <Text>*</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>B6F56004120722FC</Id>
+                                      <Text>Just one more chance...
+
+&lt;send _Try_5&gt;</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children>
+                                    <Rule>
+                                      <Inputs>
+                                        <Input>
+                                          <Id>F5659B70B3B25249</Id>
+                                          <Text>_Try_5</Text>
+                                          <Condition />
+                                        </Input>
+                                      </Inputs>
+                                      <Outputs>
+                                        <Output>
+                                          <Id>DD0D5CB92FD26BBD</Id>
+                                          <Text>Try 5
+
+&lt;printtext #FifthTryL2
+A #POSL2 of #NumCharsL2 characters. &gt;
+Related word or phrase:  (#WordL2).
+&lt;printtext 
+(Type "end" to end game.  Type "score" for statistics.)&gt;</Text>
+                                          <Condition />
+                                          <Cmd />
+                                        </Output>
+                                      </Outputs>
+                                      <Children>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>72C004D684EE3784</Id>
+                                              <Text>*</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>E207E8942DCC5681</Id>
+                                              <Text>Five and out!  
+The word in question is: #WordL2.
+Let's try again.
+
+&lt;send _Level_2_Try_1&gt;</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>9D73D5DAE0D6B8C</Id>
+                                          <Name>*</Name>
+                                        </Rule>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>48A46FBAB512C0C8</Id>
+                                              <Text>#WordL2</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>BF04D986412EC1C3</Id>
+                                              <Text>#WordL2 is correct.
+Try 5 Winner! ... Just in time. 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "2"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>E8AB9008D89B9ED</Id>
+                                              <Text>#WordL2 is correct.
+Try 5 Winner! 
+Lets Kick it Up to Level 3 ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "2"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                                              <Condition>Int16.Parse(vars["_Level_2_Points"].Trim()) &gt;= 40</Condition>
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>B38FBCCABC7BAD75</Id>
+                                          <Name>Winner</Name>
+                                        </Rule>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>6AACF31F74281479</Id>
+                                              <Text>quit</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>6DF6B09DF04FDAF7</Id>
+                                              <Text>end</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>BDFF962E6005D9ED</Id>
+                                              <Text>stop</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>D1ADA8099FEF13F7</Id>
+                                              <Text>exit</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>C47A30162276EF0</Id>
+                                              <Text>OK, game over.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>630E93EAE0FA70E</Id>
+                                              <Text>O.K. No more game.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>955FCE9129049906</Id>
+                                              <Text>End of game.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>5FDE17DEF3F7BFA4</Id>
+                                              <Text>Calling it quits?  Fine.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>F65EA277C548D845</Id>
+                                              <Text>Well then, the game ends here.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>113B6D6CCBDBD432</Id>
+                                          <Name>quit</Name>
+                                        </Rule>
+                                      </Children>
+                                      <VirtualParents />
+                                      <Id>DD2C472B133DAD62</Id>
+                                      <Name>Try 5</Name>
+                                    </Rule>
+                                  </Children>
+                                  <VirtualParents />
+                                  <Id>630153BA36BF6B14</Id>
+                                  <Name>*</Name>
+                                </Rule>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>31EBE06848FA6ADC</Id>
+                                      <Text>#WordL2</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>9DB52AFFE76A2EFE</Id>
+                                      <Text>#WordL2 is correct.
+Try 4 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "4"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>CD857EB1D472F058</Id>
+                                      <Text>#WordL2 is correct.
+Try 4 Winner! 
+Lets Kick it Up to Level 3 ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "4"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                                      <Condition>Int16.Parse(vars["_Level_2_Points"].Trim()) &gt;= 40</Condition>
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children />
+                                  <VirtualParents />
+                                  <Id>AA5A5A641A3B91F</Id>
+                                  <Name>Winner</Name>
+                                </Rule>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>7F38F0298E59E678</Id>
+                                      <Text>quit</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>FFDFAB70B2A9C998</Id>
+                                      <Text>end</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>CCABAE3EC201F853</Id>
+                                      <Text>stop</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>3D84C1C0A40A7AEE</Id>
+                                      <Text>exit</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>9C0C4643EEAF1BD2</Id>
+                                      <Text>OK, game over.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>3E046F6E226C3DEB</Id>
+                                      <Text>O.K. No more game.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>7C614F4AD4D85073</Id>
+                                      <Text>End of game.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>51CE5287168DB1C8</Id>
+                                      <Text>Calling it quits?  Fine.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>31AD91EC919EC185</Id>
+                                      <Text>Well then, the game ends here.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children />
+                                  <VirtualParents />
+                                  <Id>9FB14EDBF5296BD</Id>
+                                  <Name>quit</Name>
+                                </Rule>
+                              </Children>
+                              <VirtualParents />
+                              <Id>58DA0A33668481C3</Id>
+                              <Name>Try 4</Name>
+                            </Rule>
+                          </Children>
+                          <VirtualParents />
+                          <Id>A3A1444EC1E49706</Id>
+                          <Name>*</Name>
+                        </Rule>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>BA7D593B886EA19F</Id>
+                              <Text>#WordL2</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>F10F7763C58FEE0</Id>
+                              <Text>#WordL2 is correct.
+Try 3 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "6"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>BBEE1EC11142C495</Id>
+                              <Text>#WordL2 is correct.
+Try 3 Winner! 
+Lets Kick it Up to Level 3 ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "6"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                              <Condition>Int16.Parse(vars["_Level_2_Points"].Trim()) &gt;= 40</Condition>
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children />
+                          <VirtualParents />
+                          <Id>FC5F50C5F12FF05D</Id>
+                          <Name>Winner</Name>
+                        </Rule>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>8FA253AD9756F9D2</Id>
+                              <Text>quit</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>7FF2225FBD9DDEBF</Id>
+                              <Text>end</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>D517F0A21CCE5B16</Id>
+                              <Text>stop</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>4735D455FC5E2276</Id>
+                              <Text>exit</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>14F797AB141CD02D</Id>
+                              <Text>OK, game over.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>79ACB9AC68E448FD</Id>
+                              <Text>O.K. No more game.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>579B491538DE68D</Id>
+                              <Text>End of game.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>74432E1CE7BB46CC</Id>
+                              <Text>Calling it quits?  Fine.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>73FD0823DE439ED0</Id>
+                              <Text>Well then, the game ends here.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children />
+                          <VirtualParents />
+                          <Id>864A0EFB377F2</Id>
+                          <Name>quit</Name>
+                        </Rule>
+                      </Children>
+                      <VirtualParents />
+                      <Id>622ACC2249854FD4</Id>
+                      <Name>Try 3</Name>
+                    </Rule>
+                  </Children>
+                  <VirtualParents />
+                  <Id>D819CB89552254AF</Id>
+                  <Name>*</Name>
+                </Rule>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>64B5AE792009879C</Id>
+                      <Text>#WordL2</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>830E64055B8C2BAB</Id>
+                      <Text>#WordL2 is correct.
+Try 2 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "8"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>F96116CDA88A4D55</Id>
+                      <Text>#WordL2 is correct.
+Try 2 Winner! 
+Lets Kick it Up to Level 3 ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "8"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                      <Condition>Int16.Parse(vars["_Level_2_Points"].Trim()) &gt;= 40</Condition>
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children />
+                  <VirtualParents />
+                  <Id>C230988A2BB2C757</Id>
+                  <Name>Winner</Name>
+                </Rule>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>F793A44D68C8D3C3</Id>
+                      <Text>quit</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>4AAF507ECF007015</Id>
+                      <Text>end</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>CFFB43E0BD2F2A4E</Id>
+                      <Text>stop</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>D69DE32490EFEF76</Id>
+                      <Text>exit</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>DF0F8C1C319F1EA7</Id>
+                      <Text>OK, game over.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>2C2EC78923C8CA76</Id>
+                      <Text>O.K. No more game.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>893CE824EEDAAAFF</Id>
+                      <Text>End of game.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>79A35682C4E04D9E</Id>
+                      <Text>Calling it quits?  Fine.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>258CCE2EC84D97A4</Id>
+                      <Text>Well then, the game ends here.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children />
+                  <VirtualParents />
+                  <Id>5D3E782A2981D2EF</Id>
+                  <Name>quit</Name>
+                </Rule>
+              </Children>
+              <VirtualParents />
+              <Id>83905FA0557FA534</Id>
+              <Name>Try 2</Name>
+            </Rule>
+          </Children>
+          <VirtualParents />
+          <Id>B5E3F5438445FCA</Id>
+          <Name>*</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>82D154B72654CAE</Id>
+              <Text>#WordL2</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>EDB4725BC96197A6</Id>
+              <Text>#WordL2 is correct.
+Try 1 Winner! 
+Let's try another word...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "10"); ?&gt;
+&lt;send _Level_2_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>CDB53E9883691BC9</Id>
+              <Text>#WordL2 is correct.
+Try 1 Winner! 
+Lets Kick it Up to Level 3 ...
+
+&lt;?csharp vars["_Level_2_Points"] = MyMath.Add(vars["_Level_2_Points"] , "10"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+              <Condition>Int16.Parse(vars["_Level_2_Points"].Trim()) &gt;= 40</Condition>
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>B1C17BBD60E7687B</Id>
+          <Name>Winner</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>377095E05C8B37B5</Id>
+              <Text>quit</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>634C2239AD6FF050</Id>
+              <Text>end</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>DFB7F8CE6E2B4B4D</Id>
+              <Text>stop</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>875BCE9FC566D3FD</Id>
+              <Text>exit</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>9844EE0BF2E70C67</Id>
+              <Text>Game over.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>38ADE873B51E22EF</Id>
+              <Text>O.K. No more game.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>1C903570963BB8D5</Id>
+              <Text>End of game.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>87F84AADBF7A81F9</Id>
+              <Text>Calling it quits?  Fine.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>3F97778A971BAE35</Id>
+              <Text>Well then, the game ends here.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>D286D90E1F86D06D</Id>
+          <Name>quit</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>55DA12186768B053</Id>
+              <Text>Score</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>6B72D6C4B70B65A7</Id>
+              <Text>Stat*</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>4364536AC8718BCC</Id>
+              <Text>&lt;printtext *** Statistics ***&gt;
+Level 1
+Number of Words: [_Level_1_Word_Count]
+Total Points: [_Level_1_Points]
+&lt;printtext ...&gt;
+Level 2
+Number of Words: [_Level_2_Word_Count]
+Total Points: [_Level_2_Points]
+&lt;send _Level_2_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>DD92328E9191236F</Id>
+          <Name>Score</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>7E32EF963E1D9EF1</Id>
+              <Text>Level 2</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>AAB469957EDEFB31</Id>
+              <Text>Skiping this word and trying another ...
+&lt;send _Level_2_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>3B585F06247FDE74</Id>
+          <Name>Level 2</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>45A9DC4522D67A55</Id>
+              <Text>Level 1</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>D3354B8E94207884</Id>
+              <Text>Falling back to Level 1 ...
+&lt;send _Level_1_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>F6D1BA9FE48462A6</Id>
+          <Name>Level 1</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>70703508F98B2E9D</Id>
+              <Text>Level 3</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>2A9163CB237CF17E</Id>
+              <Text>Jumping ahead to Level 3 ...
+&lt;send _Level_3_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>FC2F94E5106A5A30</Id>
+          <Name>Level 3</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>A55D17436077F685</Id>
+              <Text>Level *</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>D353738DC85F2F1D</Id>
+              <Text>Enter "Level 1" , "Level 2" , or "Level 3"  to skip to another word and level.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>E769166281C77A41</Id>
+          <Name>Level *</Name>
+        </Rule>
+      </Children>
+      <VirtualParents />
+      <Id>24446FF2F6B7F909</Id>
+      <Name>Level 2 - Try 1</Name>
+    </Rule>
+    <Rule>
+      <Inputs>
+        <Input>
+          <Id>4E83A63A9A8B1E7F</Id>
+          <Text>_Level_3_Try_1</Text>
+          <Condition />
+        </Input>
+      </Inputs>
+      <Outputs>
+        <Output>
+          <Id>8E1250A048670F59</Id>
+          <Text>&lt;?csharp vars["_Level_3_Word_Count"] = MyMath.Add(vars["_Level_3_Word_Count"] , "1"); ?&gt;
+Level 3 Try 1 Word [_Level_3_Word_Count]
+
+&lt;printtext #FirstTryL3 &gt;
+A #POSL3 of #NumWordsL3 Word(s) and #NumCharsL3 characters (total).
+A related word or phrase:  (#WordL3).
+&lt;printtext 
+(Type "quit" to end game.  Type "score" for score.)&gt;
+&lt;mem.set _Current_Level 3&gt;</Text>
+          <Condition />
+          <Cmd />
+        </Output>
+      </Outputs>
+      <Children>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>FDBDE67D1396CB64</Id>
+              <Text>*</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>9426F6B6F5E74FEB</Id>
+              <Text>Let's give it another try.
+
+&lt;send _Try_2&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children>
+            <Rule>
+              <Inputs>
+                <Input>
+                  <Id>44073CA3638B73B6</Id>
+                  <Text>_Try_2</Text>
+                  <Condition />
+                </Input>
+              </Inputs>
+              <Outputs>
+                <Output>
+                  <Id>6D1A52A669676331</Id>
+                  <Text>Try 2
+
+&lt;printtext #SecondTryL3
+A #POSL3 of #NumWordsL3 Words(s) and #NumCharsL3 characters (total).&gt;
+A related word or phrase:  (#WordL3).
+&lt;printtext 
+(Type "exit" to end game.  Type "stats" for game statistics.)&gt;</Text>
+                  <Condition />
+                  <Cmd />
+                </Output>
+              </Outputs>
+              <Children>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>B72EF9696FDC9151</Id>
+                      <Text>*</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>ABBA3803717C1A20</Id>
+                      <Text>Foiled again!
+
+&lt;send _Try_3&gt;</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children>
+                    <Rule>
+                      <Inputs>
+                        <Input>
+                          <Id>EA564A408FBC2D4A</Id>
+                          <Text>_Try_3</Text>
+                          <Condition />
+                        </Input>
+                      </Inputs>
+                      <Outputs>
+                        <Output>
+                          <Id>4FBD68C45FD9FF86</Id>
+                          <Text>Try 3
+
+&lt;printtext #ThirdTryL3
+A #POSL3 of #NumWordsL3 Word(s) and #NumCharsL3 characters (total).&gt;
+A related word or phrase:  (#WordL3).
+&lt;printtext 
+(Type "end" to end game.  For statistics type "stats".)&gt;</Text>
+                          <Condition />
+                          <Cmd />
+                        </Output>
+                      </Outputs>
+                      <Children>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>8DB8C5BE79B1A7C2</Id>
+                              <Text>*</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>A087C1E598AEB577</Id>
+                              <Text>Try again.
+
+&lt;send _Try_4&gt;</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children>
+                            <Rule>
+                              <Inputs>
+                                <Input>
+                                  <Id>49D4CB52AB48C30A</Id>
+                                  <Text>_Try_4</Text>
+                                  <Condition />
+                                </Input>
+                              </Inputs>
+                              <Outputs>
+                                <Output>
+                                  <Id>6F9A9982A2CD412C</Id>
+                                  <Text>Try 4
+
+&lt;printtext #FourthTryL3
+A #POSL3 of #NumWordsL3 Word(s) and #NumCharsL3 characters (total). &gt;
+A related word or phrase:  (#WordL3).
+&lt;printtext 
+(Type "stop" to end game.  Type "score" for statistics.)&gt;</Text>
+                                  <Condition />
+                                  <Cmd />
+                                </Output>
+                              </Outputs>
+                              <Children>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>BBF65480B9234C93</Id>
+                                      <Text>*</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>9223FC226D1E402</Id>
+                                      <Text>Just one more chance...
+
+&lt;send _Try_5&gt;</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children>
+                                    <Rule>
+                                      <Inputs>
+                                        <Input>
+                                          <Id>AEBCEB349BF9234B</Id>
+                                          <Text>_Try_5</Text>
+                                          <Condition />
+                                        </Input>
+                                      </Inputs>
+                                      <Outputs>
+                                        <Output>
+                                          <Id>FCB2E914CD17219B</Id>
+                                          <Text>Try 5
+
+&lt;printtext #FifthTryL3
+A #POSL3 of #NumWordsL3 Word(s) and #NumCharsL3 characters (total). &gt;
+Related word or phrase:  (#WordL3).
+&lt;printtext 
+(Type "end" to end game.  Type "score" for statistics.)&gt;</Text>
+                                          <Condition />
+                                          <Cmd />
+                                        </Output>
+                                      </Outputs>
+                                      <Children>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>205F4166822DA6ED</Id>
+                                              <Text>*</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>1FFEF7F27F55FC8D</Id>
+                                              <Text>Five and out!  
+The word in question is: #WordL3.
+Let's try again.
+
+&lt;send _Level_3_Try_1&gt;</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>C2B311788507278</Id>
+                                          <Name>*</Name>
+                                        </Rule>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>A3FFB1CC46B0123E</Id>
+                                              <Text>#WordL3</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>837CBF1EE6DDDFFD</Id>
+                                              <Text>#WordL3 is correct.
+Try 5 Winner! ... Just in time. 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "2"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>5F538A958FE9F124</Id>
+                                              <Text>#WordL3 is correct.
+Try 5 Winner! 
+You are on top now.
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "2"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                                              <Condition>Int16.Parse(vars["_Level_3_Word_Count"].Trim()) &gt;= 40</Condition>
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>D70F0ED157EC82DB</Id>
+                                          <Name>Winner</Name>
+                                        </Rule>
+                                        <Rule>
+                                          <Inputs>
+                                            <Input>
+                                              <Id>695A034AA9E43BB6</Id>
+                                              <Text>quit</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>3DB23F0160691EE5</Id>
+                                              <Text>end</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>EF1B2EC527DA486</Id>
+                                              <Text>stop</Text>
+                                              <Condition />
+                                            </Input>
+                                            <Input>
+                                              <Id>B3155D222BA057DB</Id>
+                                              <Text>exit</Text>
+                                              <Condition />
+                                            </Input>
+                                          </Inputs>
+                                          <Outputs>
+                                            <Output>
+                                              <Id>1D5545A73D7DB168</Id>
+                                              <Text>OK, game over.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>82669715C331C15</Id>
+                                              <Text>O.K. No more game.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>4FA4E55915D14FF8</Id>
+                                              <Text>End of game.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>AEA8773376DE38B6</Id>
+                                              <Text>Calling it quits?  Fine.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                            <Output>
+                                              <Id>EAC30F7852B4DF31</Id>
+                                              <Text>Well then, the game ends here.</Text>
+                                              <Condition />
+                                              <Cmd />
+                                            </Output>
+                                          </Outputs>
+                                          <Children />
+                                          <VirtualParents />
+                                          <Id>5DF9A36C3CACFD1A</Id>
+                                          <Name>quit</Name>
+                                        </Rule>
+                                      </Children>
+                                      <VirtualParents />
+                                      <Id>6CA809E5E31416CC</Id>
+                                      <Name>Try 5</Name>
+                                    </Rule>
+                                  </Children>
+                                  <VirtualParents />
+                                  <Id>53DB528B44E63436</Id>
+                                  <Name>*</Name>
+                                </Rule>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>780E22502C7D9A0</Id>
+                                      <Text>#WordL3</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>5745EE7D864B00FB</Id>
+                                      <Text>#WordL3 is correct.
+Try 4 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "4"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>901676E7C4FCB06C</Id>
+                                      <Text>#WordL3 is correct.
+Try 4 Winner! 
+You are on top now.
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "4"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                                      <Condition>Int16.Parse(vars["_Level_3_Word_Count"].Trim()) &gt;= 40</Condition>
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children />
+                                  <VirtualParents />
+                                  <Id>84D961716B525B4</Id>
+                                  <Name>Winner</Name>
+                                </Rule>
+                                <Rule>
+                                  <Inputs>
+                                    <Input>
+                                      <Id>EAC176BEA402C765</Id>
+                                      <Text>quit</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>4B52A5E7FEB441E9</Id>
+                                      <Text>end</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>4742668042336AF4</Id>
+                                      <Text>stop</Text>
+                                      <Condition />
+                                    </Input>
+                                    <Input>
+                                      <Id>53EE2C03599EFA6A</Id>
+                                      <Text>exit</Text>
+                                      <Condition />
+                                    </Input>
+                                  </Inputs>
+                                  <Outputs>
+                                    <Output>
+                                      <Id>89DBF9BA6ED4D85D</Id>
+                                      <Text>OK, game over.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>2408D64E39B21D09</Id>
+                                      <Text>O.K. No more game.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>B64FC93E948C1767</Id>
+                                      <Text>End of game.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>B24F7C5B95031EED</Id>
+                                      <Text>Calling it quits?  Fine.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                    <Output>
+                                      <Id>5A611FB66AD5535D</Id>
+                                      <Text>Well then, the game ends here.</Text>
+                                      <Condition />
+                                      <Cmd />
+                                    </Output>
+                                  </Outputs>
+                                  <Children />
+                                  <VirtualParents />
+                                  <Id>628C5E38931E0DBF</Id>
+                                  <Name>quit</Name>
+                                </Rule>
+                              </Children>
+                              <VirtualParents />
+                              <Id>BFF88810EDE8A94A</Id>
+                              <Name>Try 4</Name>
+                            </Rule>
+                          </Children>
+                          <VirtualParents />
+                          <Id>96FC27D7966D578</Id>
+                          <Name>*</Name>
+                        </Rule>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>A6EF5224FB98BA7E</Id>
+                              <Text>#WordL3</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>E2FE87709D8B7CD5</Id>
+                              <Text>#WordL3 is correct.
+Try 3 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "6"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>2BE04A82B9AAC0B6</Id>
+                              <Text>#WordL3 is correct.
+Try 3 Winner! 
+You are on top now.
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "6"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                              <Condition>Int16.Parse(vars["_Level_3_Word_Count"].Trim()) &gt;= 40</Condition>
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children />
+                          <VirtualParents />
+                          <Id>E5D14129283E044E</Id>
+                          <Name>Winner</Name>
+                        </Rule>
+                        <Rule>
+                          <Inputs>
+                            <Input>
+                              <Id>D348D89D83D2E3D2</Id>
+                              <Text>quit</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>EBDA8664ECCE397E</Id>
+                              <Text>end</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>B7E386C4F1AFB0C9</Id>
+                              <Text>stop</Text>
+                              <Condition />
+                            </Input>
+                            <Input>
+                              <Id>4829BFD17E51C3E1</Id>
+                              <Text>exit</Text>
+                              <Condition />
+                            </Input>
+                          </Inputs>
+                          <Outputs>
+                            <Output>
+                              <Id>C7493263A74C3C69</Id>
+                              <Text>OK, game over.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>57EAB1493A4F3F69</Id>
+                              <Text>O.K. No more game.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>634F7557BFEEB689</Id>
+                              <Text>End of game.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>F722537BC73CA8EF</Id>
+                              <Text>Calling it quits?  Fine.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                            <Output>
+                              <Id>9A03731295B320E0</Id>
+                              <Text>Well then, the game ends here.</Text>
+                              <Condition />
+                              <Cmd />
+                            </Output>
+                          </Outputs>
+                          <Children />
+                          <VirtualParents />
+                          <Id>1D485094A4364EE7</Id>
+                          <Name>quit</Name>
+                        </Rule>
+                      </Children>
+                      <VirtualParents />
+                      <Id>B106BE64AE10DB5</Id>
+                      <Name>Try 3</Name>
+                    </Rule>
+                  </Children>
+                  <VirtualParents />
+                  <Id>980C9BB43829EE83</Id>
+                  <Name>*</Name>
+                </Rule>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>98D8C1F66C09EA20</Id>
+                      <Text>#WordL3</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>9DF80A39A59E9F57</Id>
+                      <Text>#WordL3 is correct.
+Try 2 Winner! 
+Let's try another word ...
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "8"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>AD530B652F2EBB8</Id>
+                      <Text>#WordL3 is correct.
+Try 2 Winner! 
+You are on top now.
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "8"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+                      <Condition>Int16.Parse(vars["_Level_3_Word_Count"].Trim()) &gt;= 40</Condition>
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children />
+                  <VirtualParents />
+                  <Id>A3F9AB5465D433B8</Id>
+                  <Name>Winner</Name>
+                </Rule>
+                <Rule>
+                  <Inputs>
+                    <Input>
+                      <Id>945367449DF0A636</Id>
+                      <Text>quit</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>633EA3AF757381E7</Id>
+                      <Text>end</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>AF0A652D7C1CD</Id>
+                      <Text>stop</Text>
+                      <Condition />
+                    </Input>
+                    <Input>
+                      <Id>E87D3200C19435D0</Id>
+                      <Text>exit</Text>
+                      <Condition />
+                    </Input>
+                  </Inputs>
+                  <Outputs>
+                    <Output>
+                      <Id>AD022F4297BF5289</Id>
+                      <Text>OK, game over.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>AD3DAEDF64661D5C</Id>
+                      <Text>O.K. No more game.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>91116DA64359D435</Id>
+                      <Text>End of game.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>3E99DE9C89B9629D</Id>
+                      <Text>Calling it quits?  Fine.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                    <Output>
+                      <Id>8A52DE76122B032D</Id>
+                      <Text>Well then, the game ends here.</Text>
+                      <Condition />
+                      <Cmd />
+                    </Output>
+                  </Outputs>
+                  <Children />
+                  <VirtualParents />
+                  <Id>39CCB1BA39F04919</Id>
+                  <Name>quit</Name>
+                </Rule>
+              </Children>
+              <VirtualParents />
+              <Id>58E4CE7310DFFACC</Id>
+              <Name>Try 2</Name>
+            </Rule>
+          </Children>
+          <VirtualParents />
+          <Id>AFBC5370C688E22F</Id>
+          <Name>*</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>FA240E423B3940A2</Id>
+              <Text>#WordL3</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>BEBD3F1E3290FDD2</Id>
+              <Text>#WordL3 is correct.
+Try 1 Winner! 
+Let's try another word...
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "10"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>BC0D0D5F7627905F</Id>
+          <Name>Winner</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>F31C3979EC56A663</Id>
+              <Text>quit</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>F8DC997219F4EEC9</Id>
+              <Text>end</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>7FFAC391493716D7</Id>
+              <Text>stop</Text>
+              <Condition />
+            </Input>
+            <Input>
+              <Id>86AA8A2F789D0EB9</Id>
+              <Text>exit</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>A6B770768FABB66</Id>
+              <Text>Game over.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>A0DA7D644250F1E</Id>
+              <Text>O.K. No more game.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>C1A35BFD681C4EFD</Id>
+              <Text>End of game.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>E07F26E4E61AE3E8</Id>
+              <Text>Calling it quits?  Fine.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+            <Output>
+              <Id>9AAA449F42703878</Id>
+              <Text>Well then, the game ends here.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>8257C9019F11F2F9</Id>
+          <Name>quit</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>11265465C0695886</Id>
+              <Text>Level 2</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>1BDFCBCB215C476C</Id>
+              <Text>Falling Back to Level 2 ...
+&lt;send _Level_2_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>401D7511D9F9A8B9</Id>
+          <Name>Level 2</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>B1824C1064ABB248</Id>
+              <Text>Level 1</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>3533C43A6A755F6</Id>
+              <Text>Taking two steps back to Level 1 ...
+&lt;send _Level_1_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>26FED722D07C0BF9</Id>
+          <Name>Level 1</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>60B8940279F8B798</Id>
+              <Text>Level 3</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>3D66A982DE96CF65</Id>
+              <Text>Let's try another word at Level 3 ...
+&lt;send _Level_3_Try_1&gt;</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>9B34C17BFBE58E7D</Id>
+          <Name>Level 3</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>7DECBA8D0CAB2E</Id>
+              <Text>#WordL3</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>FAFC79EB8D32D2C</Id>
+              <Text>#WordL3 is correct.
+Try 1 Winner! 
+You are on top now.
+
+&lt;?csharp vars["_Level_3_Points"] = MyMath.Add(vars["_Level_3_Points"] , "10"); ?&gt;
+&lt;send _Level_3_Try_1&gt;</Text>
+              <Condition>Int16.Parse(vars["_Level_3_Word_Count"].Trim()) &gt;= 40</Condition>
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>FCB9066C7E9BECC5</Id>
+          <Name>Winner</Name>
+        </Rule>
+        <Rule>
+          <Inputs>
+            <Input>
+              <Id>4FF5DBDBCD86A69A</Id>
+              <Text>Level *</Text>
+              <Condition />
+            </Input>
+          </Inputs>
+          <Outputs>
+            <Output>
+              <Id>D9F8071F9528B197</Id>
+              <Text>Enter "Level 1" , "Level 2" , or "Level 3"  to skip to another word and level.</Text>
+              <Condition />
+              <Cmd />
+            </Output>
+          </Outputs>
+          <Children />
+          <VirtualParents />
+          <Id>900C43CD3E3E299C</Id>
+          <Name>Level *</Name>
+        </Rule>
+      </Children>
+      <VirtualParents />
+      <Id>F429658BE1EC7CB2</Id>
+      <Name>Level 3 - Try 1</Name>
+    </Rule>
+  </Rules>
+  <ResourceFiles>
+    <ResourceFile>
+      <Filename>WordRelativity.vsn</Filename>
+      <Filetype>SynonymFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>MyMath.vcm</Filename>
+      <Filetype>CodeModuleFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>WordRelativityLevel1.csv</Filename>
+      <Filetype>TemplateDataFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>WordRelativityLevel2.csv</Filename>
+      <Filetype>TemplateDataFile</Filetype>
+    </ResourceFile>
+    <ResourceFile>
+      <Filename>WordRelativityLevel3.csv</Filename>
+      <Filetype>TemplateDataFile</Filetype>
+    </ResourceFile>
+  </ResourceFiles>
+  <Info>
+    <Author>Mapestone (Dan Mapes)</Author>
+    <Copyright>Public Domain</Copyright>
+    <License>Synonym files derived from the WordNet database. License info. in WordNet_license.txt</License>
+    <AuthorWebsite />
+    <CreationDate>2011-04-24T21:55:13.671875-04:00</CreationDate>
+    <LastUpdateDate>2011-05-22T21:45:03.265625-04:00</LastUpdateDate>
+    <Rating>
+      <Rating>Kids</Rating>
+      <Language>false</Language>
+      <Sexual>false</Sexual>
+      <Violence>false</Violence>
+      <Other>false</Other>
+      <Description>Synonym files derived from the WordNet database. License info. in WordNet_license.txt</Description>
+    </Rating>
+    <Category>Entertainment</Category>
+    <Language>English</Language>
+    <Comment>The unexpanded template Knowledge Base for WordRelativity, a word game based on the WordNet thesaurus.</Comment>
+  </Info>
+  <Version>1.0</Version>
+  <Build>94</Build>
+</KnowledgeBase>

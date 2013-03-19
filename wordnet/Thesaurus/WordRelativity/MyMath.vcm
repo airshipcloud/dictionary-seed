@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeModule xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Functions>
+    <Function xsi:type="Function">
+      <Id />
+      <Name>Add</Name>
+      <ReturnType>string</ReturnType>
+      <Parameters>string op1, string op2</Parameters>
+      <Code>double d1 = 1;
+double d2 = 1;
+bool bGood = true;
+try{ d1 = Double.Parse(op1.Trim());} catch{bGood = false;}
+try{ d2 = Double.Parse(op2.Trim());} catch{bGood = false;}
+if(bGood)
+{
+double dSum = d1 + d2;
+   return dSum.ToString();
+}
+else
+   return op1 + " + " + op2;</Code>
+    </Function>
+    <Function xsi:type="Function">
+      <Id />
+      <Name>Subtract</Name>
+      <ReturnType>string</ReturnType>
+      <Parameters>string op1, string op2</Parameters>
+      <Code>double d1 = 1;
+double d2 = 1;
+bool bGood = true;
+try{ d1 = Double.Parse(op1.Trim());} catch{bGood = false;}
+try{ d2 = Double.Parse(op2.Trim());} catch{bGood = false;}
+if(bGood)
+{
+double dDiff = d1 - d2;
+   return dDiff.ToString();
+}
+else
+   return op1 + " - " + op2;</Code>
+    </Function>
+    <Function xsi:type="Function">
+      <Id />
+      <Name>Multiply</Name>
+      <ReturnType>string</ReturnType>
+      <Parameters>string op1, string op2</Parameters>
+      <Code>double d1 = 1;
+double d2 = 1;
+bool bGood = true;
+try{ d1 = Double.Parse(op1.Trim());} catch{bGood = false;}
+try{ d2 = Double.Parse(op2.Trim());} catch{bGood = false;}
+if(bGood)
+{
+double dProd = d1 * d2;
+   return dProd.ToString();
+}
+else
+   return op1 + " * " + op2;</Code>
+    </Function>
+    <Function xsi:type="Function">
+      <Id />
+      <Name>Divide</Name>
+      <ReturnType>string</ReturnType>
+      <Parameters>string op1, string op2</Parameters>
+      <Code>double d1 = 1;
+double d2 = 1;
+bool bGood = true;
+try{ d1 = Double.Parse(op1.Trim());} catch{bGood = false;}
+try{ d2 = Double.Parse(op2.Trim());} catch{bGood = false;}
+if(bGood)
+{
+double dDiv = d1 / d2;
+   return dDiv.ToString();
+}
+else
+   return op1 + " / " + op2;</Code>
+    </Function>
+  </Functions>
+  <Name>MyMath</Name>
+  <Language>CSharp</Language>
+  <Includes />
+  <Vars />
+</CodeModule>
